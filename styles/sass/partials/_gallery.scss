@@ -1,0 +1,42 @@
+@use './variables';
+
+.categoryGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .items {
+        width: 40%;
+        margin: 50px 25px 25px;
+        border-radius: 10%;
+        padding: 45px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            border-radius: 10%;
+            margin-bottom: 20px;
+        }
+
+        a:hover,
+        a:focus {
+            transform: scale(0.95);
+
+        }
+    }
+
+    .itemOne {
+        background-color: variables.$quinary;
+    }
+    .itemTwo {
+        background-color: variables.$secondary;
+        }
+    .itemThree {
+        background-color: variables.$tertiary;
+    }
+    .itemFour {
+        background-color: variables.$quaternary;
+    }
+
+}
